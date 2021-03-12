@@ -1,0 +1,8 @@
+{
+  "require": {
+      "php-amqplib/php-amqplib": "^2.6",
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "ext-curl": "*"
+  }
+}
