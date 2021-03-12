@@ -13,7 +13,7 @@ class messageQueueService
     function get_amqp_connection(): AMQPStreamConnection
     {
         $config = new config();
-        return new AMQPStreamConnection($config->get_host(), $config->get_port(), $config->get_user(), $config->get_password());
+        return new AMQPStreamConnection($config->get_host(), $config->get_port(), $config->get_user(), $config->get_password(), $config->get_vhost());
     }
 
     function set_up_channel($config, $connection)

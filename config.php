@@ -1,7 +1,7 @@
 <?php
 class config
 {
-    //const host = 'rabbitmq.candidatemq.n2g-dev.net';
+    //const host = 'rabbitmq@candidatemq.n2g-dev.net';
     const host = '127.0.0.1';
     const port = '5672';
     const user = 'cand_e2ro';
@@ -9,6 +9,7 @@ class config
     const exchange = 'cand_e2ro';
     const queue = 'cand_e2ro_results';
     const apiUrl = 'https://a831bqiv1d.execute-api.eu-west-1.amazonaws.com/dev/results';
+    const vhost = 'candidatemq.n2g-dev.net';
 
 
     function get_host()
@@ -39,6 +40,9 @@ class config
     {
         return self::apiUrl;
     }
-
+    function get_vhost()
+    {
+        return self::vhost;
+    }
 }
 
